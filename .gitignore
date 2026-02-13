@@ -41,11 +41,13 @@ data/
 datasets/
 raw_data/
 *.csv
+**/*.csv
 *.json
 *.xlsx
 *.parquet
 *.zip
 *.tar.gz
+kaggle.json
 
 # 5. 모델 파일 (Model Weights)
 # 학습된 모델은 용량이 크고 바이너리 파일이라 Git으로 관리하지 않습니다.
