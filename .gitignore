@@ -1,0 +1,78 @@
+# 1. Python 관련
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 2. 가상 환경 (Conda 및 venv)
+# 가상 환경 전체를 올리면 안 되므로 반드시 제외합니다.
+.venv/
+venv/
+env/
+bin/
+conda-env/
+lib/
+share/python-wheels/
+
+# 3. 주피터 노트북 (Jupyter Notebook)
+# 노트북 실행 시 생기는 임시 파일들입니다.
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+checkpoint_*.ipynb
+
+# 4. 데이터 (Data) - 가장 중요!
+# ML 데이터셋은 보통 용량이 크므로 폴더째로 제외합니다.
+data/
+datasets/
+raw_data/
+*.csv
+*.json
+*.xlsx
+*.parquet
+*.zip
+*.tar.gz
+
+# 5. 모델 파일 (Model Weights)
+# 학습된 모델은 용량이 크고 바이너리 파일이라 Git으로 관리하지 않습니다.
+*.pkl
+*.h5
+*.pt
+*.pth
+*.model
+*.weights
+*.onnx
+*.joblib
+
+# 6. 로그 및 결과물
+logs/
+runs/
+results/
+*.log
+.tensorboard/
+
+# 7. 설정 및 보안
+.env
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 8. MLOps 도구 (선택 사항)
+.mlflow/
+mlruns/
+.dvc/
